@@ -1,0 +1,7 @@
+{
+  "name": "proyectociapat",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
