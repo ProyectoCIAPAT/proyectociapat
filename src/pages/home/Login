@@ -1,0 +1,32 @@
+<ion-tabs>
+  <ion-tab [root]="tab1Root" tabTitle="UMB" tabIcon="home"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="Registro" tabIcon="information-circle"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="Consulta" tabIcon="contacts"></ion-tab>
+</ion-tabs>
+<ion-header>
+  <ion-navbar>
+    <ion-title><font color="red">UMB</font></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2 align="center"><font color="red"><b>Proyectos UMB</b></font></h2>
+  <h3><b>Sobre Nosotros</b></h3>
+  <p>Base de datos y registro de los proyectos de la universidad para el ciapat.</p>
+  
+  <ion-list>
+    <ion-item>
+      <ion-label>Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <div padding>
+   <button ion-button color="danger"><font color="white"><b>Ingresar</b></font></button>
+  </div>
+  
+</ion-content>
