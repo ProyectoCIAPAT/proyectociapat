@@ -1,17 +1,45 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
+    <ion-title><font color="#f91818">Consulta</font></ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+
+<ion-content padding>
+  <br>
+  <br>
+  <br>
+  <h3><b>Proyecto</b></h3>
+
+  <ion-item>
+    <ion-label>Nombre De Proyecto:</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <br>
+
+  <br>
+
+  <h3><b>Carrera</b></h3>
+
+  <ion-item>
+    <ion-label>Carrera en la que se aplico el proyecto</ion-label>
+    <ion-select [(ngModel)]="Carrera">
+      <ion-option>Fonoaudiologia</ion-option>
+      <ion-option>Psicologia</ion-option>
+      <ion-option>Terapia Respiratoria</ion-option>
+      <ion-option>Terapia Ocupacional</ion-option>
+      <ion-option>Ingenieria De Software</ion-option>
+      <ion-option>Terapia Cardiorrespiratoria</ion-option>
+      <ion-option>Ingenieria Electronica</ion-option>
+      <ion-option>Ingenieria Biomedica</ion-option>
+      <ion-option>Fisioterapia</ion-option>
+    </ion-select>
+  </ion-item>
+<br>
+  <br>
+  <br>
+  <div padding>
+    <button ion-button color="danger" full><font color="white"><b>Consultar Proyecto</b></font></button>
+  </div>
 </ion-content>
