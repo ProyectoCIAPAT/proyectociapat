@@ -1,45 +1,36 @@
 <ion-header>
   <ion-navbar>
-    <ion-title><font FACE="SMALL FONTS"color="#f91818">Consulta</font></ion-title>
+    <ion-title><font FACE="Arial" color="#f91818">Consulta</font></ion-title>
   </ion-navbar>
 </ion-header>
-
-
 <ion-content padding>
-  <br>
-  <br>
-  <br>
-  <h3><b><font FACE="SMALL FONTS" color="red">Proyecto</font></b></h3>
-
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      {{ item }}
+    </ion-item>
+  </ion-list>
+  <h3><b><font FACE="Arial" color="#f91818">Proyecto</font></b></h3>
   <ion-item>
-    <ion-label><font FACE="SMALL FONTS">Nombre De Proyecto:</font></ion-label>
+    <ion-label><font FACE="Arial">Nombre De Proyecto:</font></ion-label>
     <ion-input type="text"></ion-input>
   </ion-item>
-
-  <br>
-
-  <br>
-
-  <h3><b><font FACE="SMALL FONTS"color="red">Carrera</font></b></h3>
-
+  <h3><b><font FACE="Arial" color="#f91818">Carrera</font></b></h3>
   <ion-item>
-    <ion-label><font FACE="Arial">Carrera en la que se aplico el proyecto</font>></ion-label>
-    <ion-select [(ngModel)]="Carrera">
-      <ion-option>Fonoaudiologia</ion-option>
-      <ion-option>Psicologia</ion-option>
-      <ion-option>Terapia Respiratoria</ion-option>
-      <ion-option>Terapia Ocupacional</ion-option>
-      <ion-option>Ingenieria De Software</ion-option>
-      <ion-option>Terapia Cardiorrespiratoria</ion-option>
-      <ion-option>Ingenieria Electronica</ion-option>
-      <ion-option>Ingenieria Biomedica</ion-option>
-      <ion-option>Fisioterapia</ion-option>
-    </ion-select>
-  </ion-item>
-<br>
-  <br>
-  <br>
+    <ion-label><font FACE="Arial">Carrera en la que se aplico el proyecto</font></ion-label>
+      <ion-select [(ngModel)]="Carrera">
+        <ion-option>Fonoaudiologia</ion-option>
+        <ion-option>Psicologia</ion-option>
+        <ion-option>Terapia Respiratoria</ion-option>
+        <ion-option>Terapia Ocupacional</ion-option>
+        <ion-option>Ingenieria De Software</ion-option>
+        <ion-option>Terapia Cardiorrespiratoria</ion-option>
+        <ion-option>Ingenieria Electronica</ion-option>
+        <ion-option>Ingenieria Biomedica</ion-option>
+        <ion-option>Fisioterapia</ion-option>
+      </ion-select>
+    </ion-item>
   <div padding>
-    <button ion-button color="danger" full><font FACE="SMALL FONTS"color="white"><b>Consultar Proyecto</b></font></button>
-  </div>
+      <button ion-button color="primary" full><font FACE="Arial" color="white"><b>Buscar Proyecto</b></font></button>
+    </div>  
 </ion-content>
