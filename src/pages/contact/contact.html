@@ -10,27 +10,27 @@
       {{ item }}
     </ion-item>
   </ion-list>
-  <h3><b><font FACE="Arial" color="#f91818">Proyecto</font></b></h3>
-  <ion-item>
-    <ion-label><font FACE="Arial">Nombre De Proyecto:</font></ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
-  <h3><b><font FACE="Arial" color="#f91818">Carrera</font></b></h3>
-  <ion-item>
-    <ion-label><font FACE="Arial">Carrera en la que se aplico el proyecto</font></ion-label>
-      <ion-select [(ngModel)]="Carrera">
-        <ion-option>Fonoaudiologia</ion-option>
-        <ion-option>Psicologia</ion-option>
-        <ion-option>Terapia Respiratoria</ion-option>
-        <ion-option>Terapia Ocupacional</ion-option>
-        <ion-option>Ingenieria De Software</ion-option>
-        <ion-option>Terapia Cardiorrespiratoria</ion-option>
-        <ion-option>Ingenieria Electronica</ion-option>
-        <ion-option>Ingenieria Biomedica</ion-option>
-        <ion-option>Fisioterapia</ion-option>
-      </ion-select>
+  <ion-list>
+    <ion-item>
+      <ion-label>Carrera:</ion-label>
+        <ion-select [(ngModel)]="carrer">
+          <ion-option>Fonoaudiologia</ion-option>
+          <ion-option>Psicologia</ion-option>
+          <ion-option>Terapia Respiratoria</ion-option>
+          <ion-option>Terapia Ocupacional</ion-option>
+          <ion-option>Ingenieria De Software</ion-option>
+          <ion-option>Terapia Cardiorrespiratoria</ion-option>
+          <ion-option>Ingenieria Electronica</ion-option>
+          <ion-option>Ingenieria Biomedica</ion-option>
+          <ion-option>Fisioterapia</ion-option>
+        </ion-select>
     </ion-item>
+    <ion-item>
+      <ion-label>Año:</ion-label>
+        <ion-datetime displayFormat="YYYY" [(ngModel)]="date"></ion-datetime>
+    </ion-item>
+  </ion-list>
   <div padding>
-      <button ion-button color="primary" full><font FACE="Arial" color="white"><b>Buscar Proyecto</b></font></button>
-    </div>  
+    <button ion-button color="primary" full><font FACE="Arial" color="white"><b>Descargar Proyecto</b></font></button>
+  </div>  
 </ion-content>
