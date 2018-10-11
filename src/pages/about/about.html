@@ -8,7 +8,7 @@
 
   <h3><b><font FACE="Arial" color="#f91818">Proyecto</font></b></h3>
   <ion-item>
-    <ion-label><ion-icon name="document" color="primary"></ion-icon><font FACE="Arial">Nombre:</font></ion-label>
+    <ion-label><ion-icon name="document" color="primary"></ion-icon><font FACE="Arial"> Nombre:</font></ion-label>
     <ion-input type="text"></ion-input>
   </ion-item>
   <h3><b><font FACE="Arial" color="#f91818">Datos</font></b></h3>
@@ -44,8 +44,8 @@
       </ion-select>
     </ion-item>
     <ion-item>
-      <ion-label><ion-icon name="pricetag" color ="primary"></ion-icon><font FACE="Arial"> Semestre:</font></ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-label><ion-icon name="calendar" color ="primary"></ion-icon> Año:</ion-label>
+        <ion-datetime displayFormat="YYYY" [(ngModel)]="date"></ion-datetime>
     </ion-item>
   </ion-list>
 
