@@ -1,21 +1,16 @@
 <
 <ion-header>
   <ion-navbar>
-
-    <ion-title><b><font FACE ="SMALL FONTS" color="#a52a2a" text-center>REGISTRO</font></b></ion-title>
-
-
+    <ion-title><b><font face="SMALL FONTS" color="#a52a2a" text-lg-center>REGISTRO</font></b></ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content>
-
-  <ion-title><h4><font FACE="Arial" color="#a52a2a">Proyecto</font></h4></ion-title>
+  <ion-title><h4 align="center"><font face="Arial" color="#a52a2a"><b>Proyecto</b></font></h4></ion-title>
   <ion-item>
     <ion-label><ion-icon name="document" color="primary"></ion-icon><font FACE="Arial"> Nombre:</font></ion-label>
     <ion-input type="text"></ion-input>
   </ion-item>
-  <ion-title><h4><font FACE="Arial" color="#a52a2a">Datos</font></h4></ion-title>
+  <ion-title><h5 align="left"><font face="Arial" color="#a52a2a"><b>Datos Del Proyecto</b></font></h5></ion-title>
   <ion-list>
     <ion-item>
       <ion-label><ion-icon name="contact" color ="primary"></ion-icon><font FACE="Arial">  Nombre:</font></ion-label>
@@ -36,15 +31,16 @@
     <ion-item>
       <ion-label><ion-icon name="school" color ="primary"></ion-icon><font FACE="Arial">  Carrera</font></ion-label>
       <ion-select [(ngModel)]="Carrera">
-        <ion-option>Fonoaudiologia</ion-option>
-        <ion-option>Psicologia</ion-option>
-        <ion-option>Terapia Respiratoria</ion-option>
-        <ion-option>Terapia Ocupacional</ion-option>
-        <ion-option>Ingenieria De Software</ion-option>
-        <ion-option>Terapia Cardiorrespiratoria</ion-option>
-        <ion-option>Ingenieria Electronica</ion-option>
-        <ion-option>Ingenieria Biomedica</ion-option>
         <ion-option>Fisioterapia</ion-option>
+        <ion-option>Fonoaudiologia</ion-option>
+        <ion-option>Ingenieria Ambiental</ion-option>
+        <ion-option>Ingenieria Biomedica</ion-option>
+        <ion-option>Ingenieria Electronica</ion-option>
+        <ion-option>Ingenieria Industrial</ion-option>
+        <ion-option>Ingenieria Software</ion-option>
+        <ion-option>Psicologia</ion-option>
+		<ion-option>Terapia Cardiorrespiratoria</ion-option>        
+        <ion-option>Terapia Ocupacional</ion-option>        
       </ion-select>
     </ion-item>
     <ion-item>
@@ -52,17 +48,14 @@
         <ion-datetime displayFormat="YYYY" [(ngModel)]="date"></ion-datetime>
     </ion-item>
   </ion-list>
-
   <ion-card>
-    <ion-card-header><b><font FACE="Arial">Introduccion</font></b></ion-card-header>
+    <ion-card-header><b><font FACE="Arial">Introducción</font></b></ion-card-header>
     <ion-card-content>
     <ion-item>
       <ion-textarea> </ion-textarea>
   </ion-item>
     </ion-card-content>
   </ion-card>
-
-
   <ion-card>
     <ion-card-header><b><font FACE="Arial">Resumen</font></b></ion-card-header>
     <ion-card-content>
@@ -71,12 +64,9 @@
       </ion-item>
     </ion-card-content>
   </ion-card>
-
-
     <div padding>
       <button ion-button color="primary" full><font FACE="Arial" color="white"><b>Adjuntar Proyecto</b></font></button>
     </div>
-
     <div padding>
       <button ion-button color="primary" full><font FACE="Arial" color="white"><b>Guardar</b></font></button>
     </div>
