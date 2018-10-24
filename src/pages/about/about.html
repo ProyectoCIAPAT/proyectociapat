@@ -4,32 +4,34 @@
   </ion-navbar>
 </ion-header>
 <ion-content>
+<form [formGroup]="infoForm">
   <ion-title><h4 align="center"><font face="Arial" color="#a52a2a"><b>Proyecto</b></font></h4></ion-title>
   <ion-item>
     <ion-label><ion-icon name="document" color="primary"></ion-icon><font face="Arial"> Nombre:</font></ion-label>
-    <ion-input type="string" value="ProyectName"></ion-input>
+    <ion-input formControlName="proy_nombrep" type="string"></ion-input>
   </ion-item>
   <ion-title><h5 align="left"><font face="Arial" color="#a52a2a"><b>Datos Del Proyecto</b></font></h5></ion-title>
   <ion-list>
     <ion-item>
       <ion-label><ion-icon name="contact" color ="primary"></ion-icon><font face="Arial">  Nombre:</font></ion-label>
-      <ion-input type="string" value="Name"></ion-input>
+      <ion-input formControlName="proy_nombre" type="string"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label><ion-icon name="card" color ="primary"></ion-icon><font face="Arial">  Codigo:</font></ion-label>
-      <ion-input type="string" value="Code"></ion-input>
+      <ion-input formControlName="proy_codigo" type="string"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label><ion-icon name="mail" color ="primary"></ion-icon><font face="Arial">  Correo:</font></ion-label>
-      <ion-input type="string" value="Email"></ion-input>
+      <ion-input formControlName="proy_correo" type="string" ></ion-input>
     </ion-item>
     <ion-item>
       <ion-label><ion-icon name="call" color ="primary"></ion-icon><font face="Arial"> Telefono:</font></ion-label>
-      <ion-input type="string" value="Phone"></ion-input>
+      <ion-input formControlName="proy_telefono" type="string"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label><ion-icon name="school" color ="primary"></ion-icon><font face="Arial">  Carrera</font></ion-label>
-      <ion-select [(ngModel)]="Carrera">
+      <ion-label><ion-icon name="school" color ="primary"></ion-icon><font face="Arial">Carrera</font></ion-label>
+
+      <ion-select formControlName = "proy_carrera" >
         <ion-option>Fisioterapia</ion-option>
         <ion-option>Fonoaudiologia</ion-option>
         <ion-option>Ingenieria Ambiental</ion-option>
@@ -42,16 +44,19 @@
         <ion-option>Terapia Ocupacional</ion-option>        
       </ion-select>
     </ion-item>
+
     <ion-item>
-      <ion-label><ion-icon name="calendar" color ="primary"></ion-icon> Año:</ion-label>
-        <ion-datetime displayFormat="YYYY" [(ngModel)]="date"></ion-datetime>
+      <ion-label> <ion-icon name="calendar" color ="primary" ></ion-icon> Año:</ion-label>
+        <ion-datetime displayFormat="YYYY" formControlName="proy_fecha"></ion-datetime>
     </ion-item>
+
+
   </ion-list>
   <ion-card>
     <ion-card-header><font face="Arial"><b>Introducción</b></font></ion-card-header>
     <ion-card-content>
     	<ion-item>
-      		<ion-textarea type="string" value="Introduction"> </ion-textarea>
+      		<ion-textarea formControlName="proy_intro" type="string"> </ion-textarea>
   		</ion-item>
     </ion-card-content>
   </ion-card>
@@ -59,7 +64,7 @@
     <ion-card-header><font face="Arial"><b>Resumen</b></font></ion-card-header>
     <ion-card-content>
       <ion-item>
-        <ion-textarea type="string" value="Summary"> </ion-textarea>
+        <ion-textarea formControlName="proy_resumen" type="string"> </ion-textarea>
       </ion-item>
     </ion-card-content>
   </ion-card>
@@ -67,6 +72,7 @@
       <button ion-button color="primary" full><font face="Arial" color="white"><b>Adjuntar Proyecto</b></font></button>
     </div>
     <div padding>
-      <button ion-button color="primary" full><font face="Arial" color="white"><b>Guardar</b></font></button>
+      <button ion-button color="primary" full (click)="guardarDatos()"><font face="Arial" color="white"><b>Guardar</b></font></button>
     </div>
+</form>
 </ion-content>
