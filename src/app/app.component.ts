@@ -7,6 +7,16 @@ import { TabsPage} from '../pages/tabs/tabs';
 import {HomePage} from "../pages/home/home";
 import {AboutPage} from "../pages/about/about";
 import {ContactPage} from "../pages/contact/contact";
+import * as firebase from 'firebase';
+
+var config = {
+  apiKey: "AIzaSyB-Pqtp6IT4cNOEmu0uGbjecbkneIQeHsw",
+  authDomain: "umbciapat.firebaseapp.com",
+  databaseURL: "https://umbciapat.firebaseio.com",
+  projectId: "umbciapat",
+  storageBucket: "umbciapat.appspot.com",
+  messagingSenderId: "139567252361"
+};
 
 @Component({
   templateUrl: 'app.html'
@@ -25,6 +35,7 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
+    firebase.initializeApp(config);
   }
 
 
