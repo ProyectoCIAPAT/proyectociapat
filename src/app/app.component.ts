@@ -35,7 +35,8 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
-    firebase.initializeApp(config);
+firebase.initializeApp(config);
+
   }
 
 
