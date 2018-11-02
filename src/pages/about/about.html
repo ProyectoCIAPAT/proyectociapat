@@ -29,7 +29,7 @@
       <ion-input formControlName="proy_telefono" type="string"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label><ion-icon name="school" color ="primary"></ion-icon><font face="Arial">Carrera</font></ion-label>
+      <ion-label><ion-icon  name="school"  color ="primary"></ion-icon><font face="Arial">Carrera</font></ion-label>
 
       <ion-select formControlName = "proy_carrera" >
         <ion-option>Fisioterapia</ion-option>
@@ -46,6 +46,11 @@
     </ion-item>
 
     <ion-item>
+      <ion-label><ion-icon name="bookmarks" color ="primary"></ion-icon><font face="Arial"> Semestre:</font></ion-label>
+      <ion-input formControlName="proy_semestre" type="string"></ion-input>
+    </ion-item>
+
+    <ion-item>
       <ion-label> <ion-icon name="calendar" color ="primary" ></ion-icon> Año:</ion-label>
         <ion-datetime displayFormat="YYYY" formControlName="proy_fecha"></ion-datetime>
     </ion-item>
@@ -57,8 +62,12 @@
     <ion-card-content>
     	<ion-item>
       		<ion-textarea formControlName="proy_intro" type="string"> </ion-textarea>
+        <br>
+        <br>
   		</ion-item>
     </ion-card-content>
+    <br>
+    <br>
   </ion-card>
   <ion-card>
     <ion-card-header><font face="Arial"><b>Resumen</b></font></ion-card-header>
@@ -67,9 +76,11 @@
         <ion-textarea formControlName="proy_resumen" type="string"> </ion-textarea>
       </ion-item>
     </ion-card-content>
+    <br>
+    <br>
   </ion-card>
   <div padding>
-    <button ion-button color="primary" full (click)="OpenLink()"><font face="Arial" color="white"><b>Adjuntar Proyecto</b></font></button>
+    <button ion-button color="primary" full ><font face="Arial" color="white"><b>Adjuntar Proyecto</b></font></button>
   </div>
     <div padding>
       <button ion-button color="primary" full (click)="guardarDatos()"><font face="Arial" color="white"><b>Guardar</b></font></button>

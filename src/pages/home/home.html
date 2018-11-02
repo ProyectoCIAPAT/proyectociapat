@@ -22,14 +22,15 @@
   <h6 text-justify><font face="ARIAL"><ion-icon name="add" color ="primary"></ion-icon>   Añadir proyecto a la base de datos del <b>CIAPAT</b>.</font></h6>
   <br>
   <h6 text-justify><font face="ARIAL"><ion-icon name="search" color="primary"></ion-icon>   Consultar proyectos ya registrados en la base de datos, búsqueda a través de titulo de proyecto, carrera o año de publicación.</font></h6>
+
   <ion-fab left bottom>
     <button ion-fab color="primary"><ion-icon name="arrow-dropright"></ion-icon></button>
     <ion-fab-list side="right">
-      <button ion-fab color="primary"><ion-icon name="logo-whatsapp"></ion-icon></button>
-      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
-      <button ion-fab><ion-icon name="logo-instagram"></ion-icon></button>
-      <button ion-fab><ion-icon name="logo-google"></ion-icon></button>
-      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button (click)="Openwhatsapp()"  ion-fab color="primary" ><ion-icon name="logo-whatsapp"></ion-icon></button>
+      <button  (click)="Openfb()" ion-fab color="primary"><ion-icon name="logo-facebook"></ion-icon></button>
+      <button (click)="OpenInsta()"  ion-fab color="primary"><ion-icon name="logo-instagram"></ion-icon></button>
+      <button (click)="Openyoutube()" ion-fab color="primary"><ion-icon name="logo-youtube"></ion-icon></button>
+      <button (click)="Opentwitter()" ion-fab color="primary"s><ion-icon name="logo-twitter"></ion-icon></button>
     </ion-fab-list>
   </ion-fab>
 </ion-content>

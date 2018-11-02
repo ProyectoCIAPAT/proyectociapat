@@ -32,9 +32,7 @@ export class AboutPage {
 
   }
 
-  OpenLink(){
-    this.ap.create("http://umb.edu.co/","_blank");
-  }
+
 
   guardarDatos(){
 
