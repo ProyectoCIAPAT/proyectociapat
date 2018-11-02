@@ -8,6 +8,7 @@ import {HomePage} from "../pages/home/home";
 import {AboutPage} from "../pages/about/about";
 import {ContactPage} from "../pages/contact/contact";
 import * as firebase from 'firebase';
+import {ConsultarpPage} from "../pages/consultarp/consultarp";
 
 var config = {
   apiKey: "AIzaSyB-Pqtp6IT4cNOEmu0uGbjecbkneIQeHsw",
@@ -27,6 +28,7 @@ export class MyApp {
     Tabs = TabsPage;
     About = AboutPage;
     Contact = ContactPage;
+    ConsultarP = ConsultarpPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

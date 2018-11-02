@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController} from 'ionic-angular';
-
+import { ConsultarpPage } from '../consultarp/consultarp';
 import {MatDialog} from "@angular/material";
 import * as firebase from 'firebase';
 
@@ -22,6 +22,10 @@ export class ContactPage{
   this.proyectos = snapshotToArray(resp);
 });
 }
+
+  consultarp(key){
+    this.navCtrl.push(ConsultarpPage,{param1 : key});
+  }
 
 }
 

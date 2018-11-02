@@ -9,7 +9,7 @@
 <ion-content padding>
   <ion-list>
   <ion-item-sliding *ngFor="let proyectos of proyectos">
-<ion-item>
+<ion-item detail lines="full" (click)='consultarp(proyectos.key)' text-wrap>
 <ion-icon name="bookmark" color="primary"></ion-icon>
 
           {{proyectos.proy_nombrep}}
